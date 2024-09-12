@@ -1,16 +1,28 @@
 import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import "../App.css";
+import "../Header.css";
 
 const Header = () => {
 	const [currentDate, setCurrentDate] = useState("");
+	const [daysLeft, setDaysLeft] = useState(0);
 	const [greeting, setGreeting] = useState("");
 
 	useEffect(() => {
 		const today = new Date();
+		const internshipDeadline = new Date("2025-01-01");
+
+		// Calculate the difference in time
+		const timeDiff = internshipDeadline - today;
+		// Convert the difference to days
+		const daysUntilDeadline = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+		setDaysLeft(daysUntilDeadline);
+
 		const options = { year: "numeric", month: "long", day: "numeric" };
 		setCurrentDate(today.toLocaleDateString(undefined, options));
 
+		// Set greeting based on time of day
 		const hours = today.getHours();
 		let greetingText = "";
 		if (hours < 12) {
@@ -18,7 +30,7 @@ const Header = () => {
 		} else if (hours < 18) {
 			greetingText = "Good afternoon";
 		} else {
-			greetingText = "Good night";
+			greetingText = "Good evening";
 		}
 		setGreeting(greetingText);
 	}, []);
@@ -46,7 +58,10 @@ const Header = () => {
 					loop={0}
 					pauseOnHover={true}
 				>
-					<h2 className="h2marquee">Today is {currentDate}</h2>
+					<h2 className="h2marquee">
+						Today is: {currentDate}. AKA {daysLeft} days until my internship
+						deadline!
+					</h2>
 				</Marquee>
 			</div>
 			<div className="animationDiv3">
@@ -61,20 +76,6 @@ const Header = () => {
 					<h1 className="h1marquee">Allow me to introduce myself.</h1>
 				</Marquee>
 			</div>
-			<h1>Jurre van Eijk</h1>
-			<nav>
-				<ul>
-					<li>
-						<a href="#about">About</a>
-					</li>
-					<li>
-						<a href="#projects">Projects</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
 		</header>
 	);
 };
