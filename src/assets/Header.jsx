@@ -32,7 +32,7 @@ const Header = () => {
 					gradient={false}
 					direction="left"
 					loop={0}
-					pauseOnHover={false}
+					pauseOnHover={true}
 				>
 					<h1 className="h1marquee">{greeting}! Nice to meet you!</h1>
 				</Marquee>
@@ -44,7 +44,7 @@ const Header = () => {
 					gradient={false}
 					direction="right"
 					loop={0}
-					pauseOnHover={false}
+					pauseOnHover={true}
 				>
 					<h2 className="h2marquee">Today is {currentDate}</h2>
 				</Marquee>
@@ -56,7 +56,7 @@ const Header = () => {
 					gradient={false}
 					direction="left"
 					loop={0}
-					pauseOnHover={false}
+					pauseOnHover={true}
 				>
 					<h1 className="h1marquee">Allow me to introduce myself.</h1>
 				</Marquee>

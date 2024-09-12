@@ -1,4 +1,4 @@
-/* General header styles */
+/* General styles */
 * {
 	margin: 0;
 	padding: 0;
@@ -18,39 +18,21 @@
 	src: url("./assets/fonts/NimbusSanL-Bol.otf");
 }
 
+/* Header section styles */
 .header {
 	position: relative;
 	background-color: var(--background);
 	color: var(--text);
 	text-align: center;
 	height: 100vh;
+	font-family: "Nimbus", sans-serif;
 }
 
 .animations {
 	height: 100%;
-	font-family: "Nimbus", sans-serif;
+	font-weight: bold;
 }
 
-.animationDiv1,
-.animationDiv3 {
-	font-size: 4rem;
-	background-color: var(--primary);
-	height: 27%;
-	/* Hollow font style */
-	color: transparent;
-	-webkit-text-stroke: 0.3rem var(--text);
-	-webkit-text-fill-color: transparent;
-}
-
-.animationDiv2 {
-	font-size: 6rem;
-	background-color: var(--background);
-	height: 46%;
-	/* Normal filled font style */
-	color: var(--text);
-}
-
-/* Container for scrolling animation */
 .animationDiv1,
 .animationDiv2,
 .animationDiv3 {
@@ -60,12 +42,65 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
+	font-family: "Nimbus", sans-serif;
 }
-/* In your App.css or relevant CSS file */
 
-.h1marquee {
-	margin-right: 4rem;
+/* Default sizes */
+.animationDiv1,
+.animationDiv3 {
+	font-size: 3rem;
+	background-color: var(--primary);
+	height: 27%;
+	color: transparent;
+	-webkit-text-stroke: 0.3rem var(--text);
+	-webkit-text-fill-color: transparent;
 }
+
+.animationDiv2 {
+	font-size: 4rem;
+	background-color: var(--background);
+	height: 46%;
+	color: var(--text);
+}
+
+/* Increase sizes for larger screens */
+@media (min-width: 600px) {
+	.animationDiv1,
+	.animationDiv3 {
+		font-size: 3.5rem;
+		-webkit-text-stroke: 0.35rem var(--text);
+	}
+
+	.animationDiv2 {
+		font-size: 4.5rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.animationDiv1,
+	.animationDiv3 {
+		font-size: 4rem;
+		-webkit-text-stroke: 0.4rem var(--text);
+	}
+
+	.animationDiv2 {
+		font-size: 5rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.animationDiv1,
+	.animationDiv3 {
+		font-size: 4.5rem;
+		-webkit-text-stroke: 0.45rem var(--text);
+	}
+
+	.animationDiv2 {
+		font-size: 5.5rem;
+	}
+}
+
+.h1marquee,
 .h2marquee {
 	margin-right: 4rem;
 }
