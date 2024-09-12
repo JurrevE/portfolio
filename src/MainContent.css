@@ -1,6 +1,60 @@
+/* MainContent.css */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+	padding: 4rem 2rem;
+	background-color: var(--background);
+	color: var(--text);
+	box-sizing: border-box; /* Ensure padding is included in element’s total width */
+	max-width: 100vw; /* Ensure main does not exceed viewport width */
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+section {
+	margin-bottom: 6rem;
+	box-sizing: border-box; /* Ensure section width includes padding */
+}
+
 #about {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+	padding: 0 2rem; /* Ensure padding inside section */
+}
+
+#about h2 {
+	font-family: "Nimbus", sans-serif;
+	font-size: 6rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: var(--text);
+	text-align: left;
+	margin-bottom: 2rem;
+	word-wrap: break-word; /* Break long words */
+}
+
+#about p {
+	font-family: "Nimbus", sans-serif;
+	font-size: 2rem;
+	line-height: 1.6;
+	max-width: 100%; /* Ensure p container does not exceed the viewport */
+	margin: 0 auto;
+	text-align: left;
+	color: var(--text);
+	word-wrap: break-word; /* Break long words */
+}
+
+/* Responsive font size adjustment */
+@media (max-width: 320px) {
+	#about h2 {
+		font-size: 4rem; /* Smaller font size for very small screens */
+	}
+
+	#about p {
+		font-size: 1.5rem; /* Adjust the font size for small screens */
+	}
 }

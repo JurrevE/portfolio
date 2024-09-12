@@ -52,7 +52,7 @@ const Header = () => {
 			<div className="animationDiv2">
 				<Marquee
 					className="marquee"
-					speed={60}
+					speed={120}
 					gradient={false}
 					direction="right"
 					loop={0}
