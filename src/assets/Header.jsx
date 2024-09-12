@@ -26,7 +26,7 @@ function getGreeting() {
 
 	// Get the month name from the array
 	const monthName = monthNames[monthIndex];
-
+	// meow
 	// Return the greeting based on the time of day
 	if (hours < 12) {
 		return "Good morning!";
