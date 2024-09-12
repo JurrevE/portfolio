@@ -1,79 +1,65 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import Marquee from "react-fast-marquee";
 import "../App.css";
 
-// Array of month names
-const monthNames = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December",
-];
-
-function getGreeting() {
-	const now = new Date();
-	const hours = now.getHours();
-	const day = now.getDate(); // Day of the month
-	const monthIndex = now.getMonth(); // Month (0-11)
-	const year = now.getFullYear(); // Four-digit year
-
-	// Get the month name from the array
-	const monthName = monthNames[monthIndex];
-	// initial commit
-	// Return the greeting based on the time of day
-	if (hours < 12) {
-		return "Good morning!";
-	} else if (hours < 18) {
-		return "Good afternoon!";
-	} else {
-		return "Good evening!";
-	}
-}
-
-function getDateInfo() {
-	const now = new Date();
-	const day = now.getDate();
-	const monthIndex = now.getMonth();
-	const year = now.getFullYear();
-
-	// Get the month name from the array
-	const monthName = monthNames[monthIndex];
-
-	return `Today is ${monthName} ${day}, ${year}`;
-}
-
-function Header() {
-	const greetingMessage = getGreeting();
-	const dateInfo = getDateInfo();
-
-	const scrollTextRef = useRef(null);
+const Header = () => {
+	const [currentDate, setCurrentDate] = useState("");
+	const [greeting, setGreeting] = useState("");
 
 	useEffect(() => {
-		if (scrollTextRef.current) {
-			const scrollText = scrollTextRef.current;
-			scrollText.setAttribute("data-content", scrollText.textContent);
+		const today = new Date();
+		const options = { year: "numeric", month: "long", day: "numeric" };
+		setCurrentDate(today.toLocaleDateString(undefined, options));
+
+		const hours = today.getHours();
+		let greetingText = "";
+		if (hours < 12) {
+			greetingText = "Good morning";
+		} else if (hours < 18) {
+			greetingText = "Good afternoon";
+		} else {
+			greetingText = "Good night";
 		}
+		setGreeting(greetingText);
 	}, []);
 
 	return (
 		<header className="header">
 			<div className="animationDiv1">
-				<h1 className="scroll-text" ref={scrollTextRef}>
-					{greetingMessage} Nice to meet you!
-				</h1>
+				<Marquee
+					className="marquee"
+					speed={60}
+					gradient={false}
+					direction="left"
+					loop={0}
+					pauseOnHover={false}
+				>
+					<h1 className="h1marquee">{greeting}! Nice to meet you!</h1>
+				</Marquee>
 			</div>
 			<div className="animationDiv2">
-				<h2 className="scroll-text">{dateInfo}</h2>
+				<Marquee
+					className="marquee"
+					speed={60}
+					gradient={false}
+					direction="right"
+					loop={0}
+					pauseOnHover={false}
+				>
+					<h2 className="h2marquee">Today is {currentDate}</h2>
+				</Marquee>
 			</div>
-			<div className="animationDiv2">
-				<h1 id="goodbyeMessage">Let's build something amazing together.</h1>
+			<div className="animationDiv3">
+				<Marquee
+					className="marquee"
+					speed={60}
+					gradient={false}
+					direction="left"
+					loop={0}
+					pauseOnHover={false}
+				>
+					<h1 className="h1marquee">Allow me to introduce myself.</h1>
+				</Marquee>
 			</div>
 			<h1>Jurre van Eijk</h1>
 			<nav>
@@ -91,6 +77,6 @@ function Header() {
 			</nav>
 		</header>
 	);
-}
+};
 
 export default Header;

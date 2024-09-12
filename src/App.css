@@ -1,41 +1,71 @@
 /* General header styles */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--text: #050a08;
+	--background: #f8fcfa;
+	--primary: #60af96;
+	--secondary: #aac4d4;
+	--accent: #8293c0;
+	--bubbles: #f2f4f3;
+}
+
+@font-face {
+	font-family: "Nimbus";
+	src: url("./assets/fonts/NimbusSanL-Bol.otf");
+}
+
 .header {
 	position: relative;
-	padding: 20px;
 	background-color: var(--background);
 	color: var(--text);
 	text-align: center;
+	height: 100vh;
+}
+
+.animations {
+	height: 100%;
+	font-family: "Nimbus", sans-serif;
+}
+
+.animationDiv1,
+.animationDiv3 {
+	font-size: 4rem;
+	background-color: var(--primary);
+	height: 27%;
+	/* Hollow font style */
+	color: transparent;
+	-webkit-text-stroke: 0.3rem var(--text);
+	-webkit-text-fill-color: transparent;
+}
+
+.animationDiv2 {
+	font-size: 6rem;
+	background-color: var(--background);
+	height: 46%;
+	/* Normal filled font style */
+	color: var(--text);
 }
 
 /* Container for scrolling animation */
 .animationDiv1,
-.animationDiv2 {
-	overflow: hidden; /* Hide the overflowing text */
-	white-space: nowrap; /* Ensure text stays on a single line */
-	position: relative; /* Needed for proper alignment */
-	margin: 0 auto; /* Center the div */
-	width: 100%; /* Ensure it takes full width */
+.animationDiv2,
+.animationDiv3 {
+	color: var(--text);
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
+/* In your App.css or relevant CSS file */
 
-/* Scroll animation */
-.scroll-text {
-	display: inline-block;
-	padding-left: 100%; /* Start position outside of the container */
-	animation: scroll-left 10s linear infinite; /* Adjust duration as needed */
+.h1marquee {
+	margin-right: 4rem;
 }
-
-/* Duplicate content for seamless scrolling */
-.scroll-text::before {
-	content: attr(data-content);
-	display: inline-block;
-}
-
-/* Keyframes for scrolling effect */
-@keyframes scroll-left {
-	0% {
-		transform: translateX(100%); /* Start off-screen to the right */
-	}
-	100% {
-		transform: translateX(-100%); /* End off-screen to the left */
-	}
+.h2marquee {
+	margin-right: 4rem;
 }
