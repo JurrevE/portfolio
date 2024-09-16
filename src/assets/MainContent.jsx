@@ -13,7 +13,7 @@ function MainContent() {
 					className="personalPicture"
 					height="400px"
 					width=" 250px"
-					src="../src/assets/pictures/IMG_2211.jpeg"
+					src="../public/IMG_1086.JPG"
 					alt="Pic of Jurre"
 				/>
 			</section>
