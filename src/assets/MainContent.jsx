@@ -7,7 +7,7 @@ function MainContent() {
 		<main>
 			<section id="about">
 				<h2 className="Name">
-					I am: <br></br> Jurre van Eijk
+					I am: <br></br> Jurre<br></br> van <br></br>Eijk
 				</h2>
 				<p>
 					Currently I am pursuing my bachelor's degree in Communication and

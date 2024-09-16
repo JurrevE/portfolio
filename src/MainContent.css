@@ -23,6 +23,10 @@ section {
 
 #about {
 	padding: 0 2rem; /* Ensure padding inside section */
+	display: flex;
+	flex-direction: column; /* Stack items vertically by default */
+	align-items: flex-start;
+	gap: 2rem; /* Space between the heading and paragraph */
 }
 
 #about h2 {
@@ -32,7 +36,6 @@ section {
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	color: var(--text);
-	text-align: left;
 	margin-bottom: 2rem;
 	word-wrap: break-word; /* Break long words */
 }
@@ -43,15 +46,28 @@ section {
 	line-height: 1.6;
 	max-width: 100%; /* Ensure p container does not exceed the viewport */
 	margin: 0 auto;
-	text-align: left;
 	color: var(--text);
 	word-wrap: break-word; /* Break long words */
+}
+
+/* Ensure that the Name section and paragraph align side by side only at larger screen sizes */
+@media (min-width: 1024px) {
+	#about {
+		flex-direction: row; /* Place h2 and p side by side */
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#about h2,
+	#about p {
+		flex: 1; /* Allow the h2 and p to take equal width */
+	}
 }
 
 /* Responsive font size adjustment */
 @media (max-width: 320px) {
 	#about h2 {
-		font-size: 4rem; /* Smaller font size for very small screens */
+		font-size: 3rem; /* Smaller font size for very small screens */
 	}
 
 	#about p {
