@@ -9,6 +9,15 @@ function MainContent() {
 				<h2 className="Name">
 					I am: <br></br> Jurre<br></br> van <br></br>Eijk
 				</h2>
+				<img
+					className="personalPicture"
+					height="400px"
+					width=" 250px"
+					src="../src/assets/pictures/IMG_2211.jpeg"
+					alt="Pic of Jurre"
+				/>
+			</section>
+			<section>
 				<p>
 					Currently I am pursuing my bachelor's degree in Communication and
 					Multimedia Design with a strong focus on front-end web development. I

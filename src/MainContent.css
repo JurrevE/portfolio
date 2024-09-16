@@ -1,32 +1,31 @@
-/* MainContent.css */
-
+/* Global Styles */
 html,
 body {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 main {
 	padding: 4rem 2rem;
 	background-color: var(--background);
 	color: var(--text);
-	box-sizing: border-box; /* Ensure padding is included in element’s total width */
-	max-width: 100vw; /* Ensure main does not exceed viewport width */
-	overflow-x: hidden; /* Prevent horizontal scrolling */
+	box-sizing: border-box;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 section {
 	margin-bottom: 6rem;
-	box-sizing: border-box; /* Ensure section width includes padding */
+	box-sizing: border-box;
 }
 
+/* About Section */
 #about {
-	padding: 0 2rem; /* Ensure padding inside section */
+	padding: 0 2rem;
 	display: flex;
-	flex-direction: column; /* Stack items vertically by default */
-	align-items: flex-start;
-	gap: 2rem; /* Space between the heading and paragraph */
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
 }
 
 #about h2 {
@@ -37,40 +36,73 @@ section {
 	text-transform: uppercase;
 	color: var(--text);
 	margin-bottom: 2rem;
-	word-wrap: break-word; /* Break long words */
+	text-align: center;
+	word-wrap: break-word;
+	white-space: nowrap;
 }
 
-#about p {
+.personalPicture {
+	max-width: 100%;
+	height: auto;
+	width: 250px;
+	object-fit: cover;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	border: 2px solid black;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+	#about {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	#about h2 {
+		font-size: 5rem;
+		text-align: left;
+	}
+
+	.personalPicture {
+		width: 400px;
+	}
+}
+
+@media (max-width: 320px) {
+	#about {
+		flex-direction: column;
+	}
+
+	#about h2 {
+		font-size: 3rem;
+	}
+
+	section p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 375px) {
+	#about h2 {
+		font-size: 5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	section p {
+		font-size: 2.2rem;
+	}
+}
+
+/* Paragraph Styling */
+section p {
 	font-family: "Nimbus", sans-serif;
 	font-size: 2rem;
 	line-height: 1.6;
-	max-width: 100%; /* Ensure p container does not exceed the viewport */
+	max-width: 100%;
 	margin: 0 auto;
+	text-align: left;
 	color: var(--text);
-	word-wrap: break-word; /* Break long words */
-}
-
-/* Ensure that the Name section and paragraph align side by side only at larger screen sizes */
-@media (min-width: 1024px) {
-	#about {
-		flex-direction: row; /* Place h2 and p side by side */
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	#about h2,
-	#about p {
-		flex: 1; /* Allow the h2 and p to take equal width */
-	}
-}
-
-/* Responsive font size adjustment */
-@media (max-width: 320px) {
-	#about h2 {
-		font-size: 3rem; /* Smaller font size for very small screens */
-	}
-
-	#about p {
-		font-size: 1.5rem; /* Adjust the font size for small screens */
-	}
+	word-wrap: break-word;
 }

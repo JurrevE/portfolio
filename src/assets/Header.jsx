@@ -42,7 +42,7 @@ const Header = () => {
 					className="marquee"
 					speed={60}
 					gradient={false}
-					direction="left"
+					direction="right"
 					loop={0}
 					pauseOnHover={true}
 				>
@@ -54,7 +54,7 @@ const Header = () => {
 					className="marquee"
 					speed={120}
 					gradient={false}
-					direction="right"
+					direction="left"
 					loop={0}
 					pauseOnHover={true}
 				>
@@ -69,7 +69,7 @@ const Header = () => {
 					className="marquee"
 					speed={60}
 					gradient={false}
-					direction="left"
+					direction="right"
 					loop={0}
 					pauseOnHover={true}
 				>
