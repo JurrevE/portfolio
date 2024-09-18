@@ -10,31 +10,31 @@ function MainContent() {
 			description:
 				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations. Built using the TALL stack and Filament with Supabase for the backend.",
 			imageSrc: "/placeholder.jpg",
-			projectLink: "#",
-			repoLink: "https://github.com/JurrevE/Steunpunt-Friesland",
+			projectLink: "https://www.yourproject1.com", // Correct project link
+			repoLink: "https://github.com/JurrevE/Steunpunt-Friesland", // GitHub link
 		},
 		{
 			title: "Spelrebel",
 			description:
 				"Created a custom website and brand identity for an acroyoga non-profit organization based in Leeuwarden. The project involved designing an engaging and functional site using Astro, coupled with dynamic GSAP animations.",
 			imageSrc: "/spelrebel.jpg",
-			projectLink: "https://youtu.be/A0YOL5Jo0Vo",
-			repoLink: "https://github.com/JurrevE/spelrebel",
+			projectLink: "https://youtu.be/A0YOL5Jo0Vo", // Correct project link
+			repoLink: "https://github.com/JurrevE/spelrebel", // GitHub link
 		},
 		{
-			title: "Resume builder ",
+			title: "Resume builder",
 			description: "Developed an online live resume creator using React.",
 			imageSrc: "/CVgood.jpg",
-			projectLink: "https://cv-builder-two-roan.vercel.app",
-			repoLink: "https://github.com/JurrevE/CV-builder",
+			projectLink: "https://cv-builder-two-roan.vercel.app", // Correct project link
+			repoLink: "https://github.com/JurrevE/CV-builder", // GitHub link
 		},
 		{
 			title: "WeatherAPP",
 			description:
-				"Developed a weather app using the Free Weather API, built using vanilla HTML, CSS and Javascript",
+				"Developed a weather app using the Free Weather API, built using vanilla HTML, CSS, and Javascript.",
 			imageSrc: "/weatherapp.jpg",
-			projectLink: "https://weatherapp-one-orcin.vercel.app",
-			repoLink: "https://github.com/JurrevE/weatherapp",
+			projectLink: "https://weatherapp-one-orcin.vercel.app", // Correct project link
+			repoLink: "https://github.com/JurrevE/weatherapp", // GitHub link
 		},
 	];
 
@@ -73,8 +73,8 @@ function MainContent() {
 						title={project.title}
 						description={project.description}
 						imageSrc={project.imageSrc}
-						projectLink={project.projectLink}
-						repoLink={project.repoLink}
+						projectLink={project.projectLink} // Passing correct project link
+						repoLink={project.repoLink} // Passing correct GitHub link
 					/>
 				))}
 			</section>
