@@ -7,7 +7,7 @@ body {
 }
 
 main {
-	padding: 4rem 2rem;
+	padding: 4rem;
 	background-color: var(--background);
 	color: var(--text);
 	box-sizing: border-box;
@@ -16,7 +16,7 @@ main {
 }
 
 section {
-	margin-bottom: 6rem;
+	margin: 2rem 0; /* Equal margin-top and margin-bottom */
 	box-sizing: border-box;
 }
 
@@ -42,12 +42,12 @@ section p {
 
 #about h2 {
 	font-family: "Nimbus", sans-serif;
-	font-size: calc(2rem + 2vw); /* Scales with viewport width */
+	font-size: calc(2rem + 2vw);
 	font-weight: bold;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	color: var(--text);
-	margin-bottom: 2rem;
+	margin-bottom: 2rem; /* Ensure consistent spacing below h2 */
 	text-align: center;
 	word-wrap: break-word;
 	white-space: nowrap;
@@ -68,7 +68,7 @@ section p {
 	border-radius: 8px;
 	overflow: hidden;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	margin-bottom: 2rem;
+	margin-bottom: 2rem; /* Consistent bottom margin for project elements */
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
@@ -99,7 +99,7 @@ section p {
 
 .project-description {
 	font-size: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 1rem; /* Ensure consistent spacing below description */
 }
 
 .project-buttons {
@@ -132,8 +132,8 @@ section p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 2rem;
-	font-size: calc(2rem + 2vw); /* Scales with viewport width */
+	margin-bottom: 4rem;
+	font-size: calc(2rem + 2vw);
 }
 
 @media (min-width: 768px) {
@@ -145,7 +145,7 @@ section p {
 	}
 
 	#about h2 {
-		font-size: calc(2rem + 2vw); /* Adjust as needed */
+		font-size: calc(2rem + 2vw);
 		text-align: left;
 	}
 
@@ -187,8 +187,8 @@ section p {
 
 @media (max-width: 480px) {
 	.project-link {
-		padding: 0.35rem 0.5rem; /* Smaller padding */
-		font-size: 0.6rem; /* Smaller font size */
+		padding: 0.35rem 0.5rem;
+		font-size: 0.6rem;
 	}
 }
 
