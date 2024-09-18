@@ -23,10 +23,7 @@ function Footer() {
 						</a>
 					</li>
 				</ul>
-				<p class="cta">
-					Let's work together!{" "}
-					<a href="mailto:jurreveijk13@gmail.com">Get in touch</a>
-				</p>
+
 				<p>&copy; 2024 Jurre van Eijk. All Rights Reserved.</p>
 			</div>
 		</footer>

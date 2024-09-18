@@ -6,7 +6,7 @@ import Project from "./Project";
 function MainContent() {
 	const projectData = [
 		{
-			title: "Steunpunt-Friesland filter tool",
+			title: "Steunpunt-Friesland ",
 			description:
 				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations. Built using the TALL stack and Filament with Supabase for the backend.",
 			imageSrc: "/placeholder.jpg",
@@ -22,7 +22,7 @@ function MainContent() {
 			repoLink: "https://github.com/JurrevE/spelrebel", // GitHub link
 		},
 		{
-			title: "Resume builder",
+			title: "Resume creator",
 			description: "Developed an online live resume creator using React.",
 			imageSrc: "/CVgood.jpg",
 			projectLink: "https://cv-builder-two-roan.vercel.app", // Correct project link
