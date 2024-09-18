@@ -185,6 +185,13 @@ section p {
 	}
 }
 
+@media (max-width: 480px) {
+	.project-link {
+		padding: 0.35rem 0.5rem; /* Smaller padding */
+		font-size: 0.6rem; /* Smaller font size */
+	}
+}
+
 @supports (-webkit-appearance: none) {
 	.project {
 		min-height: auto;

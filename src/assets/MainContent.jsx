@@ -22,7 +22,7 @@ function MainContent() {
 			repoLink: "https://github.com/JurrevE/spelrebel",
 		},
 		{
-			title: "Resume builder in React",
+			title: "Resume builder ",
 			description: "Developed an online live resume creator using React.",
 			imageSrc: "/CVgood.jpg",
 			projectLink: "https://cv-builder-two-roan.vercel.app",
@@ -30,7 +30,8 @@ function MainContent() {
 		},
 		{
 			title: "WeatherAPP",
-			description: "Weather app using: Free Weather API",
+			description:
+				"Developed a weather app using the Free Weather API, built using vanilla HTML, CSS and Javascript",
 			imageSrc: "/weatherapp.jpg",
 			projectLink: "https://weatherapp-one-orcin.vercel.app",
 			repoLink: "https://github.com/JurrevE/weatherapp",
