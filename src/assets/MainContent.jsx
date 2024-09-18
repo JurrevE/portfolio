@@ -11,7 +11,7 @@ function MainContent() {
 				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations. Built using the TALL stack and Filament with Supabase for the backend.",
 			imageSrc: "/placeholder.jpg",
 			projectLink: "#",
-			repoLink: "https://github.com/your-repo-link-here",
+			repoLink: "https://github.com/JurrevE/Steunpunt-Friesland",
 		},
 		{
 			title: "Spelrebel",

@@ -5,7 +5,6 @@ function Footer() {
 	return (
 		<footer id="footer">
 			<div class="footer-content">
-				<p>&copy; 2024 Jurre van Eijk. All Rights Reserved.</p>
 				<ul class="social-links">
 					<li>
 						<a href="mailto:jurreveijk13@gmail.com">Email</a>
@@ -28,6 +27,7 @@ function Footer() {
 					Let's work together!{" "}
 					<a href="mailto:jurreveijk13@gmail.com">Get in touch</a>
 				</p>
+				<p>&copy; 2024 Jurre van Eijk. All Rights Reserved.</p>
 			</div>
 		</footer>
 	);
