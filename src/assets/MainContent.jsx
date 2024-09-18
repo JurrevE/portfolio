@@ -18,7 +18,7 @@ function MainContent() {
 			description: "Developed an online live resume creator using React.",
 			imageSrc: "/CV.jpg",
 			projectLink: "https://cv-builder-two-roan.vercel.app",
-			repoLink: "https://github.com/your-repo-link-here",
+			repoLink: "https://github.com/JurrevE/CV-builder",
 		},
 		{
 			title: "Custom website for Spelrebel",
@@ -26,7 +26,7 @@ function MainContent() {
 				"Designed and developed a custom website and brand identity for Spelrebel.",
 			imageSrc: "/spelrebel.jpg",
 			projectLink: "https://youtu.be/A0YOL5Jo0Vo",
-			repoLink: "https://github.com/your-repo-link-here",
+			repoLink: "https://github.com/JurrevE/spelrebel",
 		},
 		{
 			title: "WeatherAPP",

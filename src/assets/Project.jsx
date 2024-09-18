@@ -16,7 +16,7 @@ function Project({ title, description, imageSrc, projectLink, repoLink }) {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						View Project
+						View project
 					</a>
 					<a
 						href={repoLink}
@@ -24,7 +24,7 @@ function Project({ title, description, imageSrc, projectLink, repoLink }) {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						View GitHub Repository
+						View GitHub repository
 					</a>
 				</div>
 			</div>
