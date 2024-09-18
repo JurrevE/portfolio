@@ -3,6 +3,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "Nimbus", sans-serif;
 }
 
 main {
@@ -41,7 +42,7 @@ section p {
 
 #about h2 {
 	font-family: "Nimbus", sans-serif;
-	font-size: 6rem;
+	font-size: calc(2rem + 2vw); /* Scales with viewport width */
 	font-weight: bold;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
@@ -127,6 +128,14 @@ section p {
 	gap: 2rem;
 }
 
+.projectsh2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	font-size: calc(2rem + 2vw); /* Scales with viewport width */
+}
+
 @media (min-width: 768px) {
 	#about {
 		flex-direction: row;
@@ -136,7 +145,7 @@ section p {
 	}
 
 	#about h2 {
-		font-size: 5rem;
+		font-size: calc(2rem + 2vw); /* Adjust as needed */
 		text-align: left;
 	}
 

@@ -14,9 +14,9 @@ function MainContent() {
 			repoLink: "https://github.com/your-repo-link-here",
 		},
 		{
-			title: "Custom website for Spelrebel",
+			title: "Spelrebel",
 			description:
-				"Designed and developed a custom website and brand identity for Spelrebel.",
+				"Created a custom website and brand identity for an acroyoga non-profit organization based in Leeuwarden. The project involved designing an engaging and functional site using Astro, coupled with dynamic GSAP animations.",
 			imageSrc: "/spelrebel.jpg",
 			projectLink: "https://youtu.be/A0YOL5Jo0Vo",
 			repoLink: "https://github.com/JurrevE/spelrebel",
@@ -64,6 +64,7 @@ function MainContent() {
 					environments.
 				</p>
 			</section>
+			<h2 className="projectsh2">Projects:</h2>
 			<section id="projects">
 				{projectData.map((project, index) => (
 					<Project
