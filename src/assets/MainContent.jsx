@@ -14,19 +14,19 @@ function MainContent() {
 			repoLink: "https://github.com/your-repo-link-here",
 		},
 		{
-			title: "Resume builder in React",
-			description: "Developed an online live resume creator using React.",
-			imageSrc: "/CV.jpg",
-			projectLink: "https://cv-builder-two-roan.vercel.app",
-			repoLink: "https://github.com/JurrevE/CV-builder",
-		},
-		{
 			title: "Custom website for Spelrebel",
 			description:
 				"Designed and developed a custom website and brand identity for Spelrebel.",
 			imageSrc: "/spelrebel.jpg",
 			projectLink: "https://youtu.be/A0YOL5Jo0Vo",
 			repoLink: "https://github.com/JurrevE/spelrebel",
+		},
+		{
+			title: "Resume builder in React",
+			description: "Developed an online live resume creator using React.",
+			imageSrc: "/CVgood.jpg",
+			projectLink: "https://cv-builder-two-roan.vercel.app",
+			repoLink: "https://github.com/JurrevE/CV-builder",
 		},
 		{
 			title: "WeatherAPP",
