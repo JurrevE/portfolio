@@ -1,4 +1,3 @@
-// MainContent.jsx
 import React from "react";
 import "../App.css";
 import "../MainContent.css";
@@ -9,22 +8,32 @@ function MainContent() {
 		{
 			title: "Steunpunt-Friesland filter tool",
 			description:
-				"Developed an application for Steunpunt Friesland to efficiently ,manage and filter over 200 care locations, featuring advanced filtering and Excel export capabilities. Built using the TALL stack and Filament, with future plans to add a location radius filter.",
+				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations, featuring advanced filtering and Excel export capabilities. Built using the TALL stack and Filament, with future plans to add a location radius filter.",
 			imageSrc: "/#", // Adjust the path if necessary
 			projectLink: "#",
+			repoLink: "https://github.com/your-repo-link-here",
 		},
 		{
 			title: "Resume builder in React",
 			description: "Developed an online live resume creator using React.",
 			imageSrc: "/CV.jpg",
 			projectLink: "https://cv-builder-two-roan.vercel.app",
+			repoLink: "https://github.com/your-repo-link-here",
 		},
 		{
 			title: "Custom website for Spelrebel",
 			description:
-				"Designed and developed a custom website and brand identity for Spelrebel",
+				"Designed and developed a custom website and brand identity for Spelrebel.",
 			imageSrc: "/spelrebel.jpg",
 			projectLink: "https://youtu.be/A0YOL5Jo0Vo",
+			repoLink: "https://github.com/your-repo-link-here",
+		},
+		{
+			title: "WeatherAPP",
+			description: "Weather app using: Free Weather API",
+			imageSrc: "#",
+			projectLink: "#",
+			repoLink: "#",
 		},
 	];
 
@@ -32,7 +41,9 @@ function MainContent() {
 		<main>
 			<section id="about">
 				<h2 className="Name">
-					I am: <br></br> Jurre<br></br> van <br></br>Eijk
+					I am: <br /> Jurre
+					<br /> van <br />
+					Eijk
 				</h2>
 				<img
 					className="personalPicture"
@@ -61,6 +72,7 @@ function MainContent() {
 						description={project.description}
 						imageSrc={project.imageSrc}
 						projectLink={project.projectLink}
+						repoLink={project.repoLink}
 					/>
 				))}
 			</section>
