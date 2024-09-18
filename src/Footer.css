@@ -15,12 +15,16 @@
 .footer-content p {
 	margin: 0.5rem 0;
 }
-
+ul.social-links {
+	display: flex;
+	align-items: center;
+}
 .social-links {
 	list-style: none;
 	padding: 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 	gap: 1.5rem;
 }
 
@@ -29,6 +33,8 @@
 }
 
 .social-links a {
+	display: flex;
+	align-items: center;
 	color: var(--text);
 	text-decoration: none;
 	font-size: 1.2rem;
@@ -37,6 +43,11 @@
 
 .social-links a:hover {
 	color: #007bff; /* Accent color */
+}
+
+.social-links a svg {
+	margin-left: 0.5rem;
+	font-size: 1.5rem;
 }
 
 .cta {
@@ -67,10 +78,6 @@
 	.social-links a {
 		font-size: 1.5rem;
 	}
-
-	.cta {
-		font-size: 1.5rem;
-	}
 }
 
 @media (min-width: 1024px) {
@@ -83,10 +90,6 @@
 	}
 
 	.social-links a {
-		font-size: 1.8rem;
-	}
-
-	.cta {
 		font-size: 1.8rem;
 	}
 }
