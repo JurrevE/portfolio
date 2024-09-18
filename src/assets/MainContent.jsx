@@ -16,14 +16,14 @@ function MainContent() {
 		{
 			title: "Resume builder in React",
 			description: "Developed an online live resume creator using React.",
-			imageSrc: "/public/CV.jpg",
+			imageSrc: "/CV.jpg",
 			projectLink: "https://cv-builder-two-roan.vercel.app",
 		},
 		{
 			title: "Custom website for Spelrebel",
 			description:
 				"Designed and developed a custom website and brand identity for Spelrebel",
-			imageSrc: "/public/spelrebel.jpg",
+			imageSrc: "/spelrebel.jpg",
 			projectLink: "https://youtu.be/A0YOL5Jo0Vo",
 		},
 	];
