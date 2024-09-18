@@ -8,8 +8,8 @@ function MainContent() {
 		{
 			title: "Steunpunt-Friesland filter tool",
 			description:
-				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations, featuring advanced filtering and Excel export capabilities. Built using the TALL stack and Filament, with future plans to add a location radius filter.",
-			imageSrc: "/#", // Adjust the path if necessary
+				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations. Built using the TALL stack and Filament with Supabase for the backend.",
+			imageSrc: "/placeholder.jpg",
 			projectLink: "#",
 			repoLink: "https://github.com/your-repo-link-here",
 		},
@@ -31,9 +31,9 @@ function MainContent() {
 		{
 			title: "WeatherAPP",
 			description: "Weather app using: Free Weather API",
-			imageSrc: "#",
-			projectLink: "#",
-			repoLink: "#",
+			imageSrc: "/weatherapp.jpg",
+			projectLink: "https://weatherapp-one-orcin.vercel.app",
+			repoLink: "https://github.com/JurrevE/weatherapp",
 		},
 	];
 
