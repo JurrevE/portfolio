@@ -10,9 +10,7 @@ function Footer() {
 			<div class="footer-content">
 				<ul class="social-links">
 					<li>
-						<a href="mailto:jurreveijk13@gmail.com">
-							Email <CgMail />
-						</a>
+						<a href="mailto:jurreveijk13@gmail.com"></a>
 					</li>
 					<li>
 						<a
@@ -20,13 +18,11 @@ function Footer() {
 							target="_blank"
 						>
 							LinkedIn
-							<FaLinkedin />
 						</a>
 					</li>
 					<li>
 						<a href="https://github.com/JurrevE" target="_blank">
 							GitHub
-							<FaGithub />
 						</a>
 					</li>
 				</ul>
