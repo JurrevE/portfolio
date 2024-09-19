@@ -77,8 +77,10 @@ section p {
 }
 
 .project:hover {
-	transform: scale(1.05); /* Scale up the project div slightly */
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+	transform: scale(
+		1.05
+	) !important; /* Use !important to ensure the hover effect applies */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 .project-image {
@@ -134,6 +136,7 @@ section p {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
+	margin-bottom: 5rem;
 }
 
 .projectsh2 {
