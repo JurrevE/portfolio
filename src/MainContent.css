@@ -6,6 +6,15 @@ body {
 	font-family: "Nimbus", sans-serif;
 }
 
+:root {
+	--text: #050a08;
+	--background: #f8fcfa;
+	--primary: #60af96;
+	--secondary: #aac4d4;
+	--accent: #8293c0;
+	--bubbles: #f2f4f3;
+}
+
 main {
 	padding: 4rem;
 	background-color: var(--background);
@@ -38,6 +47,8 @@ section p {
 	flex-direction: column;
 	align-items: center;
 	gap: 2rem;
+	max-width: 1200px; /* Optional: Add a max-width */
+	margin: 0 auto; /* Center the section */
 }
 
 #about h2 {
@@ -64,7 +75,7 @@ section p {
 
 .paragraph {
 	background-color: var(--bubbles);
-	padding: 2rem 2rem 2rem 2rem;
+	padding: 2rem;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	margin-bottom: 10rem;
@@ -121,25 +132,29 @@ section p {
 .project-buttons {
 	display: flex;
 	justify-content: center;
+	gap: 1rem; /* Add some space between buttons */
 }
 
+/* Base style */
 .project-link {
 	display: inline-block;
-	padding: 0.5rem 1rem;
+	padding: 0.75rem 1.5rem;
 	background-color: var(--primary);
 	color: white;
 	text-decoration: none;
 	border-radius: 4px;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s, transform 0.3s;
+	font-size: 1rem;
+	text-align: center;
 }
 
+/* Hover style */
 .project-link:hover {
 	background-color: var(--secondary);
+	transform: scale(1.05);
 }
 
-.project-link:visited {
-	background-color: var(--accent);
-}
+/* Visited style */
 
 /* Projects Grid */
 #projects {
@@ -208,8 +223,8 @@ section p {
 
 @media (max-width: 480px) {
 	.project-link {
-		padding: 0.35rem 0.5rem;
-		font-size: 0.6rem;
+		padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+		font-size: 0.9rem; /* Adjust font size */
 	}
 }
 
