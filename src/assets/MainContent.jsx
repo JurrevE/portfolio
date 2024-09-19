@@ -3,7 +3,7 @@ import "../App.css";
 import "../MainContent.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Project from "./Project"; // Assuming you have a Project component
+import Project from "./Project";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,22 +43,21 @@ function MainContent() {
 	];
 
 	useEffect(() => {
-		// Select all the project elements and create individual ScrollTriggers for each
 		gsap.utils.toArray(".project").forEach((project) => {
 			gsap.fromTo(
 				project,
-				{ opacity: 0, y: 50 }, // Initial state
+				{ opacity: 0, y: 50 },
 				{
 					opacity: 1,
 					y: 0,
 					duration: 1.2,
 					ease: "power2.out",
 					scrollTrigger: {
-						trigger: project, // Each project triggers its own animation
-						start: "top 65%",
+						trigger: project,
+						start: "center 95%",
 						end: "bottom 60%",
 						toggleActions: "play none none none",
-						markers: true, // Set this to true to debug if needed
+						markers: false,
 					},
 				}
 			);
@@ -69,7 +68,8 @@ function MainContent() {
 		<main>
 			<section id="about">
 				<h2 className="Name">
-					I am: <br /> Jurre
+					I am:
+					<br /> Jurre
 					<br /> van <br />
 					Eijk
 				</h2>
@@ -82,7 +82,7 @@ function MainContent() {
 				/>
 			</section>
 			<section>
-				<p>
+				<p className="paragraph">
 					Currently I am pursuing my bachelor's degree in Communication and
 					Multimedia Design with a strong focus on front-end web development. I
 					have a solid understanding of UI/UX principles, a bit of backend, and
