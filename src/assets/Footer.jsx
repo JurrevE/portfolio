@@ -8,22 +8,24 @@ function Footer() {
 	return (
 		<footer id="footer">
 			<div class="footer-content">
+				<h2>Get in contact with me!</h2>
 				<ul class="social-links">
 					<li>
-						<a href="mailto:jurreveijk13@gmail.com">Email</a>
+						<a href="mailto:jurreveijk13@gmail.com">
+							<CgMail />
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/JurrevE" target="_blank">
+							<FaGithub />
+						</a>
 					</li>
 					<li>
 						<a
 							href="https://www.linkedin.com/in/jurre-van-eijk/"
 							target="_blank"
 						>
-							LinkedIn
 							<FaLinkedin />
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/JurrevE" target="_blank">
-							GitHub
 						</a>
 					</li>
 				</ul>

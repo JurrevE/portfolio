@@ -73,7 +73,7 @@ function MainContent() {
 						start: "top 50%",
 						end: "bottom 25%",
 						toggleActions: "play none none none",
-						markers: true,
+						markers: false,
 					},
 				}
 			);
