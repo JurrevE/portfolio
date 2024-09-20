@@ -75,6 +75,7 @@ const Header = () => {
 				>
 					<h1 className="h1marquee">Allow me to introduce myself.</h1>
 				</Marquee>
+				<div className="scroll-indicator">⬇</div>
 			</div>
 		</header>
 	);

@@ -1,5 +1,4 @@
 /* Header section styles */
-
 .header {
 	position: relative;
 	background-color: var(--background);
@@ -23,6 +22,7 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	font-family: "Nimbus", sans-serif;
 }
 
@@ -41,7 +41,28 @@
 	font-size: 4rem;
 	background-color: var(--background);
 	height: 46%;
-	color: --secon;
+}
+
+.scroll-indicator {
+	font-size: 2rem;
+	animation: bounce 1s infinite;
+	position: absolute;
+	top: 77%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: transparent;
+	-webkit-text-stroke: 0.3rem var(--text);
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
 }
 
 /* Increase sizes for larger screens */

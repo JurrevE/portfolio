@@ -48,6 +48,14 @@ function MainContent() {
 			projectLink: "https://todo-list-ruby-one.vercel.app",
 			repoLink: "https://github.com/JurrevE/todolist",
 		},
+		{
+			title: "Library",
+			description:
+				"Developed a library webapp, built using vanilla HTML, CSS, and Javascript.",
+			imageSrc: "/librarypic.jpg",
+			projectLink: "https://library-eosin-one.vercel.app",
+			repoLink: "https://github.com/JurrevE/library",
+		},
 	];
 
 	useEffect(() => {
@@ -58,14 +66,14 @@ function MainContent() {
 				{
 					opacity: 1,
 					y: 0,
-					duration: 1.2,
+					duration: 1.4,
 					ease: "power2.out",
 					scrollTrigger: {
 						trigger: project,
-						start: "center 95%",
-						end: "bottom 60%",
+						start: "top 35%", // Adjust this value
+						end: "bottom 25%", // Optional: can help with misalignment
 						toggleActions: "play none none none",
-						markers: false,
+						markers: true,
 					},
 				}
 			);
