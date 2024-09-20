@@ -70,8 +70,8 @@ function MainContent() {
 					ease: "power2.out",
 					scrollTrigger: {
 						trigger: project,
-						start: "top 35%", // Adjust this value
-						end: "bottom 25%", // Optional: can help with misalignment
+						start: "top 50%",
+						end: "bottom 25%",
 						toggleActions: "play none none none",
 						markers: true,
 					},
