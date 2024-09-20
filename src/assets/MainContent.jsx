@@ -40,6 +40,14 @@ function MainContent() {
 			projectLink: "https://weatherapp-one-orcin.vercel.app",
 			repoLink: "https://github.com/JurrevE/weatherapp",
 		},
+		{
+			title: "Todo-List",
+			description:
+				"Developed a todolist webapp, built using vanilla HTML, CSS, and Javascript.",
+			imageSrc: "/todolistpic.jpg",
+			projectLink: "https://todo-list-ruby-one.vercel.app",
+			repoLink: "https://github.com/JurrevE/todolist",
+		},
 	];
 
 	useEffect(() => {
