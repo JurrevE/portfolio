@@ -70,7 +70,7 @@ function MainContent() {
 					ease: "power2.out",
 					scrollTrigger: {
 						trigger: project,
-						start: "top 50%",
+						start: "top 60%",
 						end: "bottom 25%",
 						toggleActions: "play none none none",
 						markers: false,
