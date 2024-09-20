@@ -12,7 +12,7 @@ function MainContent() {
 		{
 			title: "Steunpunt-Friesland ",
 			description:
-				"Developed an application for Steunpunt Friesland to efficiently manage and filter over 200 care locations. Built using the TALL stack and Filament with Supabase for the backend.",
+				"Developed a web application for Steunpunt Friesland to efficiently manage and filter over 200 care locations. Built using the TALL stack and Filament with Supabase for the backend.",
 			imageSrc: "/steunpuntfrieslandpic.jpg",
 			projectLink: "https://youtu.be/ye9dtZE4PvQ",
 			repoLink: "https://github.com/JurrevE/Steunpunt-Friesland",
