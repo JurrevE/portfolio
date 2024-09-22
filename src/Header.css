@@ -48,8 +48,8 @@
 	font-size: 3rem;
 	animation: bounce 1s infinite;
 	position: absolute;
-	top: 80%;
-	left: 50%;
+	top: 75%;
+	left: 47.8%;
 	transform: translate(-50%, -50%);
 	color: var(--text);
 	-webkit-text-stroke: none;
@@ -102,6 +102,49 @@
 
 	.animationDiv2 {
 		font-size: 5.5rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.scroll-indicator {
+		font-size: 3rem;
+		animation: bounce 1s infinite;
+		position: absolute;
+		top: 75%;
+		left: 42%;
+		transform: translate(-50%, -50%);
+		color: var(--text);
+		-webkit-text-stroke: none;
+		-webkit-text-fill-color: var(--text);
+		z-index: 10;
+	}
+}
+@media (max-width: 375px) {
+	.scroll-indicator {
+		font-size: 3rem;
+		animation: bounce 1s infinite;
+		position: absolute;
+		top: 75%;
+		left: 44%;
+		transform: translate(-50%, -50%);
+		color: var(--text);
+		-webkit-text-stroke: none;
+		-webkit-text-fill-color: var(--text);
+		z-index: 10;
+	}
+}
+@media (max-width: 425px) {
+	.scroll-indicator {
+		font-size: 3rem;
+		animation: bounce 1s infinite;
+		position: absolute;
+		top: 75%;
+		left: 44.5%;
+		transform: translate(-50%, -50%);
+		color: var(--text);
+		-webkit-text-stroke: none;
+		-webkit-text-fill-color: var(--text);
+		z-index: 10;
 	}
 }
 
