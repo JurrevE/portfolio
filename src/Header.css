@@ -45,7 +45,7 @@
 
 /* Scroll indicator styles */
 .scroll-indicator {
-	font-size: 2rem;
+	font-size: 3rem;
 	animation: bounce 1s infinite;
 	position: absolute;
 	top: 80%;

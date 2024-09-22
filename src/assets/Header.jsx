@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import "../App.css";
 import "../Header.css";
+import { FaArrowDown } from "react-icons/fa6";
 
 const Header = () => {
 	const [currentDate, setCurrentDate] = useState("");
@@ -75,7 +76,9 @@ const Header = () => {
 				>
 					<h1 className="h1marquee">Allow me to introduce myself.</h1>
 				</Marquee>
-				<div className="scroll-indicator">⬇</div>
+				<div className="scroll-indicator">
+					<FaArrowDown />
+				</div>
 			</div>
 		</header>
 	);
