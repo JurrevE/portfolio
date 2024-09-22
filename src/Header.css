@@ -43,18 +43,21 @@
 	height: 46%;
 }
 
+/* Scroll indicator styles */
 .scroll-indicator {
 	font-size: 2rem;
 	animation: bounce 1s infinite;
 	position: absolute;
-	top: 77%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: transparent;
-	-webkit-text-stroke: 0.3rem var(--text);
-	-webkit-text-fill-color: transparent;
+	color: var(--text);
+	-webkit-text-stroke: none;
+	-webkit-text-fill-color: var(--text);
+	z-index: 10;
 }
 
+/* Bounce animation for scroll indicator */
 @keyframes bounce {
 	0%,
 	100% {
